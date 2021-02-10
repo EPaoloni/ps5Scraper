@@ -1,8 +1,27 @@
 {
-    "dependencies": {
-        "curl": "latest",
-        "jsdom": "latest",
-        "toad-scheduler": "latest",
-        "jquery": "latest"
-    }
+  "dependencies": {
+    "curl": "latest",
+    "jsdom": "latest",
+    "toad-scheduler": "latest",
+    "jquery": "latest"
+  },
+  "name": "ps5scraper",
+  "description": "",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EPaoloni/ps5Scraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EPaoloni/ps5Scraper/issues"
+  },
+  "homepage": "https://github.com/EPaoloni/ps5Scraper#readme"
 }
