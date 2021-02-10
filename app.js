@@ -21,15 +21,7 @@ const selectors = [
 ]
 
 const server = http.createServer((req, res) => {
-    
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hola Mundo');
-});
-
-server.listen(port, hostname, () => {
-  console.log(`El servidor se está ejecutando en http://${hostname}:${port}/`);
-
+  
   const scheduler = new ToadScheduler()
 
   const task = new Task('simple task', () => { 
@@ -40,6 +32,14 @@ server.listen(port, hostname, () => {
   const job = new SimpleIntervalJob({ minutes: 30, }, task)
 
   scheduler.addSimpleIntervalJob(job)
+    
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hola Mundo');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`El servidor se está ejecutando en http://${hostname}:${port}/`);
 });
 
 function scrap(selector){
