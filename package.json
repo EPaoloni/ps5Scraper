@@ -6,9 +6,9 @@
   "devDependencies": {},
   "dependencies": {
     "curl": "0.1.4",
-    "jsdom": "latest",
-    "toad-scheduler": "latest",
-    "jquery": "latest"
+    "jsdom": "16.4.0",
+    "toad-scheduler": "1.0.2",
+    "jquery": "3.5.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
