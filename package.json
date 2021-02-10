@@ -1,15 +1,15 @@
 {
-  "dependencies": {
-    "curl": "latest",
-    "jsdom": "latest",
-    "toad-scheduler": "latest",
-    "jquery": "latest"
-  },
   "name": "ps5scraper",
   "description": "",
   "version": "1.0.0",
   "main": "app.js",
   "devDependencies": {},
+  "dependencies": {
+    "curl": "0.1.4",
+    "jsdom": "latest",
+    "toad-scheduler": "latest",
+    "jquery": "latest"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
